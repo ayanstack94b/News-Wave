@@ -8,12 +8,12 @@ const LeftSide = ({ categories, activeId }) => {
             <ul className="flex flex-col gap-3 mt-3 ">
                 {categories.news_category.map((category) => (
                     <li
-                        className={`${activeId === category.category_id && 'bg-base-200' } 
+                        className={`${activeId === category.category_id && 'bg-base-300' } 
                              rounded text-center text-xl p-3`}
                         key={category.category_id}
                         
                     >
-                        <Link className='block bg-green-400' href={`/category/${category.category_id}`}>{category.category_name}</Link>
+                        <Link className='block' href={`/category/${category.category_id}`}>{category.category_name}</Link>
                     </li>
                 ))}
             </ul>
